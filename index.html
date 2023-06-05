@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>yummy</title>
+  <link rel="icon" href="image/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Nerko+One&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- loader -->
+  <div class="loading top-0 end-0 start-0 bottom-0 bg-black position-fixed justify-content-center align-items-center">
+    <i class="fa fa-spinner fa-spin fa-5x"></i>
+  </div>
+  <!--START SIDE-NAV -->
+  <div class="side-nav-menu h-100 position-fixed d-flex top-0">
+    <div class="nav-tab d-flex flex-column justify-content-between h-100 p-4">
+      <div class="links overflow-hidden">
+        <ul class="list-unstyled">
+          <li onclick="showSearchInputs()"; class="py-2 position-relative">Search</li>
+          <li onclick="getCategories()"; class="py-2 position-relative">Categories</li>
+          <li onclick="getAreas()"; class="py-2 position-relative">Area</li>
+          <li onclick="getIngrediens()"; class="py-2 position-relative">Ingredients</li>
+          <li onclick="showContact()"; class="py-2 position-relative">Contact Us</li>
+        </ul>
+      </div>
+      <div class="nav-footer">
+        <div class="icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-solid fa-globe"></i>
+        </div>
+        <div class="footer">
+          <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+        </div>
+      </div>
+    </div>
+    <div class="nav-header d-flex flex-column justify-content-between py-4 text-center px-2 bg-white text-black">
+      <img class="logo" src="image/logo.png" alt="">
+      <i class="fa-solid fa-align-justify fa-2x open-close-icon"></i>
+      <div>
+        <i class="fa-solid fa-globe d-block"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+    </div>
+  </div>
+  <!--END SIDE-NAV -->
+
+  <!-- START SEARCH  -->
+  <div class="container w-75" id="searchContainer">
+    
+  </div>
+  <!-- END SEARCH -->
+
+  <div class="min-vh-100 position-relative">
+    <div class="inner-loading top-0 bottom-0 end-0 start-0 justify-content-center align-items-center">
+      <i class="fa fa-spinner fa-spin fa-5x"></i>
+    </div>
+
+    <div class="container">
+      <div class="row py-4 g-4" id="rowData">
+        
+      </div>
+    </div>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.6.3.min.js"></script>
+  <script src="JS/index.js"></script>
+</body>
+
+</html>
